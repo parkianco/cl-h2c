@@ -5,7 +5,8 @@
 
 ;;; Constants for secp256k1_XMD:SHA-256_SSWU_RO_
 
-(defconstant +default-dst+
+;; Use defvar to avoid SBCL DEFCONSTANT-UNEQL on string constants
+(defvar +default-dst+
   "QUUX-V01-CS02-with-secp256k1_XMD:SHA-256_SSWU_RO_"
   "Default Domain Separation Tag.")
 
