@@ -7,7 +7,11 @@
 (defpackage #:cl-h2c
   (:use #:cl)
   (:export
-   #:with-h2c-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-h2c-timing
    #:h2c-batch-process
    #:h2c-health-check#:hash-to-curve
            #:hash-to-field
