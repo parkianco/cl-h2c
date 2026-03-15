@@ -6,16 +6,16 @@
 
 (asdf:defsystem #:cl-h2c
   :description "Hash-to-curve IETF draft for secp256k1"
-  :author "Parkian Company LLC"
+  :author "Park Ian Co"
   :license "Apache-2.0"
   :version "0.1.0"
   :serial t
   :components ((:file "package")
                (:module "src"
-                :components ((:file "field")
-                             (:file "curve")
-                             (:file "sha256")
-                             (:file "h2c")))))
+                :components ((:file "package")
+                             (:file "conditions" :depends-on ("package"))
+                             (:file "types" :depends-on ("package"))
+                             (:file "cl-h2c" :depends-on ("package" "conditions" "types")))))))
 
 (asdf:defsystem #:cl-h2c/test
   :description "Tests for cl-h2c"

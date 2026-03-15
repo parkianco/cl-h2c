@@ -6,7 +6,10 @@
 
 (defpackage #:cl-h2c
   (:use #:cl)
-  (:export #:hash-to-curve
+  (:export
+   #:with-h2c-timing
+   #:h2c-batch-process
+   #:h2c-health-check#:hash-to-curve
            #:hash-to-field
            #:expand-message-xmd
            #:map-to-curve
