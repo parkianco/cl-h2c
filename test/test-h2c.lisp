@@ -1,10 +1,10 @@
 ;; Copyright (c) 2024-2026 Parkian Company LLC. All rights reserved.
-;; SPDX-License-Identifier: BSD-3-Clause
+;; SPDX-License-Identifier: Apache-2.0
 
 ;;;; test-h2c.lisp - Unit tests for h2c
 ;;;;
 ;;;; Copyright (c) 2024-2026 Parkian Company LLC. All rights reserved.
-;;;; SPDX-License-Identifier: BSD-3-Clause
+;;;; SPDX-License-Identifier: Apache-2.0
 
 (defpackage #:cl-h2c.test
   (:use #:cl)
